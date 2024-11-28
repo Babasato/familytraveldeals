@@ -1,0 +1,538 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+:root {
+  --primary-color: #bc1c5c;
+  --primary-color-dark: #bc1c5c;
+  --text-dark: #0c0a09;
+  --text-light: #78716c;
+  --white: #ffffff;
+  --max-width: 1200px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.section__container {
+  max-width: var(--max-width);
+  margin: auto;
+  padding: 5rem 1rem;
+}
+
+.section__subheader {
+  margin-bottom: 0.5rem;
+  position: relative;
+  font-weight: 500;
+  letter-spacing: 2px;
+  color: var(--text-dark);
+}
+
+.section__subheader::after {
+  position: absolute;
+  content: "";
+  top: 50%;
+  transform: translate(1rem, -50%);
+  height: 2px;
+  width: 4rem;
+  background-color: var(--primary-color);
+}
+
+.section__header {
+  max-width: 600px;
+  margin-bottom: 1rem;
+  font-size: 2.5rem;
+  font-weight: 600;
+  line-height: 3rem;
+  color: var(--text-dark);
+}
+
+.section__description {
+  max-width: 600px;
+  margin-bottom: 1rem;
+  color: var(--text-light);
+}
+
+.btn {
+  padding: 0.75rem 1.5rem;
+  outline: none;
+  border: none;
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--white);
+  background-color: var(--primary-color);
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background-color: var(--primary-color-dark);
+}
+
+img {
+  width: 100%;
+  display: flex;
+}
+
+a {
+  text-decoration: none;
+}
+
+.logo {
+  max-width: 120px;
+}
+
+html,
+body {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.header {
+  background-image: url("assets/flower.jpg");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+nav {
+  position: fixed;
+  isolation: isolate;
+  top: 0;
+  width: 100%;
+  max-width: var(--max-width);
+  margin: auto;
+  z-index: 9;
+}
+
+.nav__bar {
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  background-color: var(--primary-color);
+}
+
+.nav__menu__btn {
+  font-size: 1.5rem;
+  color: var(--white);
+  cursor: pointer;
+}
+
+.nav__links {
+  list-style: none;
+  position: absolute;
+  width: 100%;
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
+  background-color: rgba(188, 28, 92, 0.9);
+  transform: translateY(-100%);
+  transition: 0.5s;
+  z-index: -1;
+}
+
+.nav__links.open {
+  transform: translateY(0);
+}
+
+.nav__links a {
+  position: relative;
+  isolation: isolate;
+  padding-bottom: 8px;
+  color: var(--white);
+  transition: 0.3s;
+}
+
+.nav__btn {
+  display: none;
+}
+
+.header__container {
+  padding-block: 10rem 15rem;
+}
+
+.header__container p {
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+  color: var(--white);
+  text-align: center;
+  opacity: 0.6;
+}
+
+.header__container h1 {
+  font-size: 4rem;
+  font-weight: 500;
+  line-height: 4.5rem;
+  color: var(--white);
+  text-align: center;
+}
+
+.header__container h1 span {
+  color: var(--primary-color);
+}
+
+.form-options {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 20px;
+}
+
+.option-btn {
+  background-color: #5e17eb; /* Initial button color */
+  color: white; /* White text */
+  padding: 10px 20px; /* Padding for the button */
+  border: none; /* Remove default border */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor on hover */
+  margin-right: 10px; /* Spacing between buttons */
+}
+
+.option-btn:hover,
+.option-btn.selected {
+  background-color: #bc1c5c; /* Change to this color on hover and when selected */
+}
+
+.travel-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px; /* Adds space between form fields */
+}
+
+.travel-form input[type="text"],
+.travel-form input[type="date"],
+.travel-form input[type="number"],
+.travel-form select {
+  width: calc(50% - 10px); /* Two fields per row by default */
+  margin: 5px 0;
+  padding: 10px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Ensure "From" and "To" fields fit nicely */
+.travel-form input[type="text"]:first-child,
+.travel-form input[type="text"]:nth-child(2) {
+  flex: 1 1 calc(50% - 10px);
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 600px) {
+  .travel-form {
+    flex-direction: column;
+  }
+
+  .travel-form input[type="text"],
+  .travel-form input[type="date"],
+  .travel-form input[type="number"],
+  .travel-form select {
+    width: 100%; /* Full width for inputs on small screens */
+  }
+}
+
+.inquire-btn {
+  background-color: #5e17eb;
+  color: white;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.inquire-btn:hover {
+  background-color: #4b14b2;
+}
+
+.hidden {
+  display: none;
+}
+
+.banner__content {
+  padding: 2rem;
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  border-radius: 10px;
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+.banner__card {
+  text-align: center;
+  flex: 1 1 180px;
+}
+
+.banner__card h4 {
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--text-dark);
+}
+
+.banner__card p {
+  color: var(--text-light);
+}
+
+.explore {
+  text-align: center; /* Center align text in the explore section */
+}
+
+.explore__container {
+  display: flex; /* Align items horizontally on larger screens */
+  justify-content: space-between; /* Space between blog posts */
+  flex-wrap: wrap; /* Allow items to wrap to the next line on smaller screens */
+  margin-top: 2rem; /* Add some margin above the container */
+}
+
+.explore__content {
+  max-width: 300px; /* Limit the width of each blog post */
+  background-color: var(--white);
+  border-radius: 5px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+  padding: 1.5rem;
+  margin-bottom: 2rem; /* Add spacing between rows on smaller screens */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .explore__container {
+    flex-direction: column; /* Stack items vertically on smaller screens */
+    align-items: center; /* Center items */
+    gap: 1rem; /* Space between stacked items */
+  }
+
+  .explore__content {
+    width: 100%; /* Make blog posts take full width */
+    max-width: none; /* Remove max-width restriction for smaller screens */
+  }
+}
+
+/* Newsletter Section Styles */
+.newsletter {
+  background-color: black; /* Background color */
+  color: white; /* Text color */
+  padding: 20px 0; /* Padding for top and bottom */
+}
+
+.newsletter__container {
+  display: flex; /* Flexbox for horizontal layout */
+  justify-content: center; /* Center content */
+  align-items: center; /* Center items vertically */
+  flex-wrap: wrap; /* Allow wrapping on smaller screens */
+  gap: 10px; /* Space between input and button */
+}
+
+.newsletter__container h2 {
+  color: #5e17eb; /* Title color */
+  margin-right: 20px; /* Space between title and form */
+}
+
+.newsletter__container input[type="email"] {
+  padding: 10px;
+  border: none;
+  border-radius: 5px; /* Rounded corners */
+  width: 300px; /* Fixed width for input */
+}
+
+.newsletter__container button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px; /* Rounded corners */
+  background-color: #5e17eb; /* Button color */
+  color: white; /* Button text color */
+  cursor: pointer; /* Pointer on hover */
+  transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+/* Hover Effect */
+.newsletter__container button:hover {
+  background-color: #bc1c5c; /* Change button color on hover */
+}
+
+/* Responsive Styles */
+@media (max-width: 600px) {
+  .newsletter__container {
+    flex-direction: column; /* Stack elements on smaller screens */
+    align-items: stretch; /* Stretch to full width */
+    text-align: center; /* Center text on small screens */
+  }
+
+  .newsletter__container h2 {
+    margin-bottom: 10px; /* Space below title when stacked */
+    margin-right: 0; /* Remove right margin when stacked */
+  }
+
+  .newsletter__container input[type="email"] {
+    width: 100%; /* Full width for input on small screens */
+    margin-bottom: 10px; /* Space below input field */
+  }
+
+  .newsletter__container button {
+    width: auto; /* Button width auto on small screens */
+  }
+}
+
+.footer {
+  background-color: var(--text-dark);
+}
+
+.footer__container {
+  display: grid;
+  gap: 4rem 2rem;
+}
+
+.footer__col .section__description {
+  margin-block: 2rem;
+}
+
+.footer__col h4 {
+  margin-bottom: 2rem;
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: var(--white);
+}
+
+.footer__links {
+  list-style: none;
+  display: grid;
+  gap: 1rem;
+}
+
+.footer__links a {
+  color: var(--text-light);
+  transition: 0.3s;
+}
+
+.footer__links a:hover {
+  color: var(--white);
+}
+
+.footer__socials {
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.footer__socials img {
+  max-width: 25px;
+  opacity: 0.8;
+  transition: 0.3s;
+}
+
+.footer__socials img:hover {
+  opacity: 1;
+}
+
+.footer__bar {
+  padding: 1rem;
+  font-size: 0.9rem;
+  color: var(--text-light);
+  text-align: center;
+}
+
+@media (width > 576px) {
+  .room__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .footer__container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (width > 768px) {
+  nav {
+    padding: 2rem 1rem;
+    position: static;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .nav__bar {
+    padding: 0;
+    background-color: transparent;
+  }
+
+  .nav__menu__btn {
+    display: none; /* Hidden by default */
+  }
+
+  .nav__links {
+    padding: 0;
+    width: unset;
+    position: static;
+    transform: none;
+    flex-direction: row;
+    background-color: transparent;
+  }
+
+  .nav__btn {
+    display: block;
+  }
+
+  /* Hamburger Menu Styles */
+  @media (max-width: 1024px) {
+    .nav__menu__btn {
+      display: block; /* Show hamburger button on small screens */
+    }
+
+    .nav__links {
+      display: none; /* Hide links by default */
+      flex-direction: column; /* Stack links vertically */
+      position: absolute; /* Position it absolutely */
+      top: 50px; /* Adjust based on your layout */
+      left: 0;
+      right: 0;
+      background-color: white; /* Background color for dropdown */
+      z-index: 1000; /* Ensure it appears above other content */
+    }
+
+    .nav__links.active {
+      display: flex; /* Show links when active */
+    }
+  }
+
+  .nav__links a::after {
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: 0;
+    height: 2px;
+    width: 0;
+    background-color: var(--primary-color);
+    transition: 0.3s;
+    transform-origin: left;
+  }
+
+  .nav__links a:hover::after {
+    width: 100%;
+  }
+}
+
+.back-to-top {
+  position: fixed; /* Keep it fixed in the viewport */
+  bottom: 20px; /* Position from the bottom */
+  right: 20px; /* Position from the right */
+  background-color: #5e17eb; /* Initial background color */
+  color: white; /* Text color */
+  padding: 8px 12px; /* Reduced padding around the text */
+  border-radius: 5px; /* Rounded corners */
+  text-decoration: none; /* Remove underline from link */
+  font-size: 20px; /* Slightly smaller font size for the arrow */
+  transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.back-to-top:hover {
+  background-color: #bc1c5c; /* Change background color on hover */
+}
