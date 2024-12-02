@@ -1,2 +1,13 @@
-# Wanderlust_09-09-23
-Discover how to create a stunning and responsive travel website from scratch using HTML, CSS, and JavaScript!
+# Project Title: Family Travel Deals
+
+## Description
+Family Travel Deals is a travel website designed to help families find affordable and wholesome travel experiences. The site features various travel deals, including accommodations, activities, and tours, tailored specifically for family needs.
+
+## Installation
+To run this project locally, clone the repository and install dependencies:
+
+```bash
+git clone https://github.com/yourusername/family-travel-deals.git
+cd family-travel-deals
+npm install
+npm start
