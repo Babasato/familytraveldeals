@@ -1,5 +1,5 @@
 # Redirect all HTTP traffic to HTTPS
-/* https://familytraveldeals.online/:splat 301!
+/* https://www.familytraveldeals.online/:splat 301!
 
 # Catch-all redirect for SPA
 /* /index.html 200
