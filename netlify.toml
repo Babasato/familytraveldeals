@@ -1,0 +1,9 @@
+[build]
+  processing = true
+
+[build.processing]
+  skip_processing = false
+
+[context.production.processing]
+  css = { bundle = true, minify = true }
+  js = { bundle = true, minify = true }
