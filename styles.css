@@ -295,6 +295,61 @@ nav {
   box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.2);
 }
 
+.blog__grid {
+  margin-top: 4rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.blog__card {
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);
+  transition: 0.3s;
+  background: var(
+    --white
+  ); /* Use the same background color as trending cards */
+}
+
+.blog__card img {
+  margin-bottom: 1rem;
+  border-radius: 10px;
+  width: 100%;
+}
+
+.blog__card h4 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--text-dark);
+  margin-bottom: 0.5rem;
+}
+
+.blog__card p {
+  font-size: 0.9rem;
+  color: var(--text-light);
+  margin-bottom: 1rem;
+}
+
+.blog__card .btn {
+  display: inline-block;
+  font-size: 0.9rem;
+  padding: 0.5rem 1rem;
+  color: var(--white);
+  background: var(--primary-color);
+  border-radius: 5px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.blog__card .btn:hover {
+  background: var(--primary-color-dark);
+}
+
+.blog__card:hover {
+  box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.2);
+}
+
 .subscribe {
   background-image: url("assets/kids.jpg");
   background-position: center center;
