@@ -9,7 +9,7 @@ public_folder: "/assets/uploads" # Public URL path
 collections:
   - name: "blog"
     label: "Blog"
-    folder: "_posts"
+    folder: "_posts" # Ensure this folder exists in your project
     create: true
     slug: "{{slug}}"
     fields:
