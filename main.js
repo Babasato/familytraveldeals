@@ -43,3 +43,11 @@ ScrollReveal().reveal(".client__card", {
   ...scrollRevealOption,
   interval: 500,
 });
+
+import { Tina } from 'tinacms';
+
+const cms = new Tina({
+  clientId: process.env.NEXT_PUBLIC_TINA_CLIENT_ID, // Your client ID
+  token: process.env.READ_TOKEN, // Your read token
+  branch: 'main', // Make sure this matches your actual branch name
+});
