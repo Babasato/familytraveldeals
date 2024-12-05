@@ -1,0 +1,22 @@
+media:
+  input: 'src/files/media'    # Path where your media files will be stored
+  output: 'files/media'        # Path for serving media files on your site
+  path: 'src/files/media'      # Default path for the media browser
+  extensions:                  # Allowed file extensions
+    - jpg
+    - jpeg
+    - png
+    - gif
+
+collections:
+  - name: 'pages'              # Unique name for the collection
+    label: 'Pages'              # Display name in the CMS
+    type: 'collection'          # Type of collection (can be 'collection' or 'file')
+    path: 'content/pages'       # Path where page files are stored
+    fields:                     # Define fields for each page entry
+      - name: 'title'
+        label: 'Title'
+        type: 'string'
+      - name: 'body'
+        label: 'Body'
+        type: 'rich-text'
