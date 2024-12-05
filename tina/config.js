@@ -2,7 +2,7 @@ import { defineConfig } from 'tinacms';
 
 export default defineConfig({
   branch: 'main', // Replace with your GitHub branch (e.g., "main" or "master")
-  clientId: 'your-client-id', // Will be obtained from TinaCMS later
+  clientId: 'fc4de72e-08e4-450f-b7e1-de8f872ab5c1', // Will be obtained from TinaCMS later
   token: 'your-access-token', // Will be obtained from TinaCMS later
   build: {
     outputFolder: 'admin',
