@@ -1,7 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <!-- Google Tag Manager -->
+    <!-- Primary Meta Tags -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Family Trips</title>
+
+    <!-- Analytics - Google Tag Manager -->
     <script>
       (function (w, d, s, l, i) {
         w[l] = w[l] || [];
@@ -14,26 +19,15 @@
         f.parentNode.insertBefore(j, f);
       })(window, document, "script", "dataLayer", "GTM-5H88W45L");
     </script>
-    <!-- End Google Tag Manager -->
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Family Travel Deals</title>
-    <!-- Swiper CSS -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
-    />
 
-    <!-- Swiper JS -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
-
-    <link
-      href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css"
-      rel="stylesheet"
-    />
+    <!-- Essential Stylesheets - Combined and optimized -->
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css"
     />
     <link
       rel="stylesheet"
@@ -45,12 +39,24 @@
     />
     <link rel="stylesheet" href="styles.css" />
 
-    <!-- Favicon Code -->
+    <!-- Favicon Configuration -->
     <link
       rel="icon"
       type="image/png"
-      href="/my-favicon/favicon-96x96.png"
+      sizes="32x32"
+      href="/my-favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/my-favicon/favicon-16x16.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
       sizes="96x96"
+      href="/my-favicon/favicon-96x96.png"
     />
     <link rel="icon" type="image/svg+xml" href="/my-favicon/favicon.svg" />
     <link rel="shortcut icon" href="/my-favicon/favicon.ico" />
@@ -61,17 +67,19 @@
     />
     <link rel="manifest" href="/my-favicon/site.webmanifest" />
   </head>
+
   <body>
-    <!-- Google Tag Manager (noscript) -->
-    <noscript
-      ><iframe
+    <!-- Google Tag Manager (noscript) - Required for GTM functionality -->
+    <noscript>
+      <iframe
         src="https://www.googletagmanager.com/ns.html?id=GTM-5H88W45L"
         height="0"
         width="0"
         style="display: none; visibility: hidden"
-      ></iframe
-    ></noscript>
-    <!-- End Google Tag Manager (noscript) -->
+      ></iframe>
+    </noscript>
+
+    <!-- Navigation Section -->
     <header class="header">
       <nav>
         <div class="nav__bar">
@@ -89,64 +97,61 @@
         </ul>
       </nav>
 
+      <!-- Hero Section with Featured Deals -->
       <div class="section__container header__container" id="home">
         <h1>
           Skip the tourist traps and dive into real adventures that fit your
           budget
         </h1>
         <p>Where do the coolest family memories happen? Right here!</p>
+        >
 
+        <!-- Featured Deals Section -->
         <div class="featured-deals">
           <h2 class="featured__header">Top Family Experiences</h2>
           <div class="deals-grid">
-            <!-- Featured Viator experiences will go here -->
-            <!-- We'll add these next! -->
-            <div class="featured-deals">
-              <div class="deals-grid">
-                <div class="deal-card">
-                  <img
-                    src="assets/river-chicago.jpg"
-                    alt="Chicago Food Bike Tour"
-                  />
-                  <div class="deal-content">
-                    <h3>Chicago Family Food and Bike Tour</h3>
-                    <p>
-                      Taste Chicago's iconic foods while cycling past Millennium
-                      Park and along the stunning Lakefront Trail!
-                    </p>
-                    <a
-                      href="https://www.viator.com/tours/Chicago/City-Lights-at-Night-Bicycle-Tour/d673-3332NIGHT?pid=P00234727"
-                      class="btn"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      Book Tour
-                    </a>
-                  </div>
-                </div>
+            <div class="deal-card">
+              <img
+                src="assets/river-chicago.jpg"
+                alt="Chicago Food Bike Tour"
+              />
+              <div class="deal-content">
+                <h3>Chicago Family Food and Bike Tour</h3>
+                <p>
+                  Taste Chicago's iconic foods while cycling past Millennium
+                  Park and along the stunning Lakefront Trail!
+                </p>
+                <a
+                  href="https://www.viator.com/tours/Chicago/City-Lights-at-Night-Bicycle-Tour/d673-3332NIGHT?pid=P00234727"
+                  class="btn"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Book Tour
+                </a>
+              </div>
+            </div>
 
-                <div class="deal-card">
-                  <img
-                    src="assets/harry-potter.jpg"
-                    alt="London Harry Potter Tour"
-                  />
-                  <div class="deal-content">
-                    <h3>London Harry Potter Guided Tour (Free for Kids)</h3>
-                    <p>
-                      Walk in Harry's footsteps through magical London! Visit
-                      King's Cross Station, discover hidden filming locations,
-                      and shop for wizarding treasures.
-                    </p>
-                    <a
-                      href="https://www.viator.com/tours/London/London-Harry-Potter-and-Roman-history-tour-Kids-go-free/d737-75760P11?pid=P00234727"
-                      class="btn"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      Book Now
-                    </a>
-                  </div>
-                </div>
+            <div class="deal-card">
+              <img
+                src="assets/harry-potter.jpg"
+                alt="London Harry Potter Tour"
+              />
+              <div class="deal-content">
+                <h3>London Harry Potter Guided Tour (Free for Kids)</h3>
+                <p>
+                  Walk in Harry's footsteps through magical London! Visit King's
+                  Cross Station, discover hidden filming locations, and shop for
+                  wizarding treasures.
+                </p>
+                <a
+                  href="https://www.viator.com/tours/London/London-Harry-Potter-and-Roman-history-tour-Kids-go-free/d737-75760P11?pid=P00234727"
+                  class="btn"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Book Now
+                </a>
               </div>
             </div>
           </div>
@@ -154,9 +159,11 @@
       </div>
     </header>
 
+    <!-- Activities Section -->
     <section class="section__container service__container" id="service">
       <h2 class="section__header">Activities</h2>
       <div class="service__grid">
+        <!-- Family Boat Card -->
         <div class="service__card">
           <img src="assets/yacht-fam.jpg" alt="Harbor Tours" />
           <div>
@@ -179,6 +186,7 @@
           </div>
         </div>
 
+        <!-- Private City Tours Card -->
         <div class="service__card">
           <img src="assets/car-headlight.jpg" alt="City Tours" />
           <div>
@@ -201,6 +209,7 @@
           </div>
         </div>
 
+        <!-- Theme Parks Card -->
         <div class="service__card">
           <img src="assets/dad-and-daughter.jpg" alt="Theme Parks" />
           <div>
@@ -223,6 +232,7 @@
           </div>
         </div>
 
+        <!-- Family Day Trips Card -->
         <div class="service__card">
           <img src="assets/dog-trip.jpg" alt="Day Trips" />
           <div>
@@ -245,6 +255,7 @@
           </div>
         </div>
 
+        <!-- Must-See Attractions Card -->
         <div class="service__card">
           <img src="assets/tickets-blue.jpg" alt="Attractions" />
           <div>
@@ -267,6 +278,7 @@
           </div>
         </div>
 
+        <!-- Family Food Adventures Card -->
         <div class="service__card">
           <img src="assets/food-fest.jpg" alt="Food Tours" />
           <div>
@@ -291,9 +303,11 @@
       </div>
     </section>
 
+    <!-- Memorable Experiences Section -->
     <section class="section__container cards__container" id="essentials">
       <h2 class="section__header">Memorable Experiences</h2>
       <div class="cards-grid">
+        <!-- Cooking Classes Card -->
         <div class="card">
           <img src="assets/strawberries-8.jpg" alt="cooking class" />
           <div class="card-content">
@@ -308,6 +322,7 @@
           </div>
         </div>
 
+        <!-- Walking Tours Card -->
         <div class="card">
           <img src="assets/girl-walking.jpg" alt="walking tours" />
           <div class="card-content">
@@ -322,6 +337,7 @@
           </div>
         </div>
 
+        <!-- Water Activities Card -->
         <div class="card">
           <img src="assets/water-boy.jpg" alt="water activities" />
           <div class="card-content">
@@ -336,6 +352,7 @@
           </div>
         </div>
 
+        <!-- Bike Tours Card -->
         <div class="card">
           <img src="assets/family-bike.jpg" alt="bike tours" />
           <div class="card-content">
@@ -350,6 +367,7 @@
           </div>
         </div>
 
+        <!-- Wildlife Tours Card -->
         <div class="card">
           <img src="assets/wild-tour.jpg" alt="wildlife tours" />
           <div class="card-content">
@@ -364,6 +382,7 @@
           </div>
         </div>
 
+        <!-- Family Art Classes Card -->
         <div class="card">
           <img src="assets/girl-paint.jpg" alt="night tours" />
           <div class="card-content">
@@ -380,6 +399,7 @@
       </div>
     </section>
 
+    <!-- About Section - Value Proposition -->
     <section class="section__container about__container" id="about">
       <div class="about__content">
         <h2 class="section__header">
@@ -414,6 +434,7 @@
       </div>
     </section>
 
+    <!-- Client Section - Trust Metrics -->
     <section class="client" id="client">
       <div class="section__container client__container">
         <h2 class="section__header">Why Choose Us?</h2>
@@ -443,29 +464,29 @@
       </div>
     </section>
 
+    <!-- Footer Section -->
     <footer class="footer" id="footer">
       <div class="section__container footer__container">
+        <!-- Brand Column -->
         <div class="footer__col">
           <div class="logo">
             <a href="#"><img src="assets/family-deals.png" alt="logo" /></a>
           </div>
           <p>
-            Experience effortless travel planning with Family Travel Deals. Your
+            Experience effortless travel planning with Family Trips. Your
             journey begins here, where seamless organization meets unforgettable
             family adventures.
           </p>
           <ul class="footer__socials">
             <li>
-              <a
-                href="https://www.pinterest.com/familytraveldeals/"
-                target="_blank"
-              >
+              <a href="https://www.pinterest.com/familytrips/" target="_blank">
                 <i class="ri-pinterest-fill"></i>
               </a>
             </li>
           </ul>
         </div>
 
+        <!-- Quick Links Column -->
         <div class="footer__col">
           <h4>Quick Links</h4>
           <ul class="footer__links">
@@ -504,23 +525,25 @@
           </ul>
         </div>
 
+        <!-- Contact Column -->
         <div class="footer__col">
           <h4>Contact Us</h4>
           <ul class="footer__links">
             <li>
-              <a href="mailto:robert@familytraveldeals.online">
+              <a href="mailto:contact@familytrips.online">
                 <span><i class="ri-record-mail-line"></i></span>
-                robert@familytraveldeals.online
+                contact@familytrips.online
               </a>
             </li>
           </ul>
         </div>
 
+        <!-- Newsletter Column -->
         <div class="footer__col">
           <h4>Newsletter</h4>
           <div id="mc_embed_signup">
             <form
-              action="https://online.us7.list-manage.com/subscribe/post?u=18c99a321be2b9e1f968d076e&amp;id=e0b8d9597f&amp;f_id=00dc41e4f0"
+              action="#"
               method="post"
               id="mc-embedded-subscribe-form"
               name="mc-embedded-subscribe-form"
@@ -537,14 +560,6 @@
                   required
                 />
               </div>
-              <div style="position: absolute; left: -5000px" aria-hidden="true">
-                <input
-                  type="text"
-                  name="b_18c99a321be2b9e1f968d076e_e0b8d9597f"
-                  tabindex="-1"
-                  value=""
-                />
-              </div>
               <div class="clear">
                 <input
                   type="submit"
@@ -556,51 +571,27 @@
               </div>
             </form>
           </div>
-          <script
-            type="text/javascript"
-            src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"
-          ></script>
-          <script type="text/javascript">
-            (function ($) {
-              window.fnames = new Array();
-              window.ftypes = new Array();
-              fnames[0] = "EMAIL";
-              ftypes[0] = "email";
-            })(jQuery);
-            var $mcj = jQuery.noConflict(true);
-          </script>
         </div>
       </div>
       <div class="footer__bar">
-        Copyright © 2023 Web Design Mastery. All rights reserved.
+        Copyright © 2024 Family Trips. All rights reserved.
       </div>
     </footer>
 
-    <script src="https://unpkg.com/scrollreveal"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
-    <script id="mcjs">
-      !(function (c, h, i, m, p) {
-        (m = c.createElement(h)),
-          (p = c.getElementsByTagName(h)[0]),
-          (m.async = 1),
-          (m.src = i),
-          p.parentNode.insertBefore(m, p);
-      })(
-        document,
-        "script",
-        "https://chimpstatic.com/mcjs-connected/js/users/18c99a321be2b9e1f968d076e/64ab069b307fd2761170ef75c.js"
-      );
-    </script>
-    <!-- Add this at the bottom of your body tag -->
+    <!-- Essential Scripts -->
     <button id="backToTop" class="back-to-top">
       <i class="fas fa-arrow-up"></i>
     </button>
+
+    <!-- Core Scripts -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Back to Top Functionality -->
     <script>
       document.addEventListener("DOMContentLoaded", function () {
         const backToTopButton = document.getElementById("backToTop");
 
-        // Show/hide button based on scroll position
         window.addEventListener("scroll", () => {
           if (window.pageYOffset > 300) {
             backToTopButton.classList.add("show");
@@ -609,7 +600,6 @@
           }
         });
 
-        // Scroll to top when clicked
         backToTopButton.addEventListener("click", () => {
           window.scrollTo({
             top: 0,
@@ -618,6 +608,7 @@
         });
       });
     </script>
+
     <script src="main.js"></script>
   </body>
 </html>
